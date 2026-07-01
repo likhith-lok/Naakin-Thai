@@ -67,6 +67,7 @@
     font-weight: 700;
     color: var(--white);
     letter-spacing: 0.02em;
+    
   }
   .nav-logo span:last-child {
     font-family: var(--ff-accent);
@@ -75,6 +76,7 @@
     letter-spacing: 0.25em;
     text-transform: uppercase;
     margin-top: 2px;
+    ;
   }
   .nav-links {
     display: flex;
@@ -303,7 +305,8 @@
   .img-placeholder {
     width: 100%;
     aspect-ratio: 4/5;
-    background: linear-gradient(135deg, rgb(93, 93, 93), rgba(9, 9, 9, 0.189));
+    /*background: linear-gradient(135deg, rgba(255, 0, 0, 0.462), rgba(255, 0, 0, 0.122));*/
+    background: linear-gradient(135deg, #141414, #3a2f0b, #d4af37);
     border-radius: 2px;
     opacity: 0.9;
     display: flex;
@@ -314,6 +317,7 @@
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(201,168,76,0.15);
+    opacity: 0.9;
   }
   .img-placeholder::before {
     content: '';
@@ -329,7 +333,7 @@
     font-family: var(--ff-accent);
     font-size: 0.85rem;
     font-style: italic;
-    color: rgba(201,168,76,0.5);
+    color: rgb(255, 255, 255);
     letter-spacing: 0.1em;
   }
   .about-badge {
