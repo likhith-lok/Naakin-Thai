@@ -11,560 +11,580 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <main>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" onclick="toggleMenu()">Our Story</a>
+      <a href="#menu" onclick="toggleMenu()">Menu</a>
+      <a href="#gallery" onclick="toggleMenu()">Gallery</a>
+      <a href="#reviews" onclick="toggleMenu()">Reviews</a>
+      <a href="#reservation" onclick="toggleMenu()">Reserve</a>
+      <a href="#location" onclick="toggleMenu()">Find Us</a>
+    </div>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#about" onclick="toggleMenu()">Our Story</a>
-  <a href="#menu" onclick="toggleMenu()">Menu</a>
-  <a href="#gallery" onclick="toggleMenu()">Gallery</a>
-  <a href="#reviews" onclick="toggleMenu()">Reviews</a>
-  <a href="#reservation" onclick="toggleMenu()">Reserve</a>
-  <a href="#location" onclick="toggleMenu()">Find Us</a>
-</div>
+    <!-- NAVIGATION -->
+    <nav class="nav" id="nav">
+      
+        <a href="https://www.nakiin.dk">
+          <img 
+      src="logo.png" 
+      alt="Nakiin Thai Logo" 
+      width="relative" 
+      height="50px"
+      postion: relative>
+        </a>
+      
+      <a href="#" class="nav-logo">
+        <span>Nakiin Thai</span>
+        <span>Kolding · Since 2019</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="menu.html" target="_blank">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#location">Find Us</a></li>
+      </ul>
+      <a href="#reservation" class="nav-cta">Reserve a Table</a>
+      <button class="nav-burger" id="burger" onclick="toggleMenu()" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
 
-<!-- NAVIGATION -->
-<nav class="nav" id="nav">
-  <a href="#" class="nav-logo">
-    <span>Nakiin Thai</span>
-    <span>Kolding · Since 2019</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="#about">Our Story</a></li>
-    <li><a href="#menu">Menu</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#reviews">Reviews</a></li>
-    <li><a href="#location">Find Us</a></li>
-  </ul>
-  <a href="#reservation" class="nav-cta">Reserve a Table</a>
-  <button class="nav-burger" id="burger" onclick="toggleMenu()" aria-label="Open menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-bg"></div>
-  <div class="hero-pattern"></div>
-  <div class="hero-content">
-    <p class="hero-eyebrow">Authentic Thai Cuisine in Kolding</p>
-    <h1 class="hero-title">Where<br>Thailand<br><em>Begins</em></h1>
-    <p class="hero-subtitle">Haderslevvej 87 · Kolding</p>
-    <div class="hero-stars">
-      <div class="stars-row">
-        <span class="star">★</span>
-        <span class="star">★</span>
-        <span class="star">★</span>
-        <span class="star">★</span>
-        <span class="star">★</span>
-      </div>
-      <span class="hero-stars-text">4.9 · 150+  Google Reviews</span>
-    </div>
-    <div class="hero-actions">
-      <a href="https://foodbooking.com" class="btn-primary">🍽 Order Online</a>
-      <a href="#reservation" class="btn-outline">Reserve a Table</a>
-    </div>
-  </div>
-  
-  
-</section>
-
-<!-- ABOUT -->
-<section class="about-strip" id="about">
-  <div class="about-visual reveal">
-    <div class="img-placeholder">
-      <div class="img-placeholder-icon">
-        <img src="logo.png" alt="Nakiin Thai Logo" />
-      </div>
-      <div class="img-placeholder-label">The Heart of Nakiin</div>
-    </div>
-    <div class="about-badge">
-      <div class="badge-num">4.9</div><br>
-      <div class="badge-label">Rating</div>
-    </div>
-  </div>
-  <div class="about-text reveal">
-    <span class="section-eyebrow">Our Story</span>
-    <h2 class="section-title">Food Made With<br><span class="accent">Genuine Passion</span></h2>
-    <p class="about-body">
-      At Nakiin Thai, we believe Thai food is more than a meal — it's a journey. Every dish is prepared with recipes passed down through generations, using fresh herbs, aromatic spices, and ingredients sourced for their quality and flavour.
-    </p>
-    <p class="about-body">
-      From our rich, coconut-based curries to the wok-fired intensity of Pad Thai, every plate tells the story of Thailand's vibrant culinary tradition. Whether you dine in, take away, or order delivery — you taste the difference that care makes.
-    </p>
-    <div class="about-stats">
-      <div class="stat-item">
-        <div class="stat-num">150+</div>
-        <div class="stat-label">Happy Reviews</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">30+</div>
-        <div class="stat-label">Authentic Dishes</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">5★</div>
-        <div class="stat-label">Avg. Rating</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE STRIP -->
-<div class="experience">
-  <div class="experience-grid">
-    <div class="exp-item reveal">
-      <span class="exp-icon">
-        <video src="cooking video.mp4" loop autoplay width="100%" height="100%" ><video>
-      </span>
-      <div class="exp-title">Dine In</div>
-      <div class="exp-desc">Enjoy Thailand's warmth in our welcoming, cosy restaurant space</div>
-    </div>
-    <div class="exp-divider"></div>
-    <div class="exp-item reveal">
-      <span class="exp-icon">🛵</span>
-      <div class="exp-title">Delivery</div>
-      <div class="exp-desc">Fresh, hot Thai food delivered straight to your door</div>
-    </div>
-    <div class="exp-divider"></div>
-    <div class="exp-item reveal">
-      <span class="exp-icon">🥡</span>
-      <div class="exp-title">Takeaway</div>
-      <div class="exp-desc">Quick and convenient — ready when you are, packed with care</div>
-    </div>
-    <div class="exp-divider"></div>
-    <div class="exp-item reveal">
-      <span class="exp-icon">🌶</span>
-      <div class="exp-title">Authentic</div>
-      <div class="exp-desc">Traditional Thai recipes crafted with genuine spices and love</div>
-    </div>
-  </div>
-</div>
-
-<!-- MENU / FEATURED DISHES -->
-<section class="menu-section" id="menu">
-  <div class="section-header reveal">
-    <span class="section-eyebrow">From Our Kitchen</span>
-    <h2 class="section-title" style="color:var(--jade)">Signature <em style="font-style:italic;color:var(--coral)">Dishes</em></h2>
-    <p class="section-body">Each dish is a celebration of Thai culinary heritage — vibrant, balanced, and made with the finest ingredients</p>
-  </div>
-  <div class="menu-grid">
-
-    <!-- FEATURED CARD -->
-    <div class="dish-card featured reveal">
-      <div class="dish-img">
-        <div class="dish-img-inner food-ph ph-red-curry">
-          <div class="food-ph-icon">🍛</div>
-          <div class="food-ph-name">Gaeng Phet</div>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-pattern"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Authentic Thai Cuisine in Kolding</p>
+        <h1 class="hero-title">Where<br>Thailand<br><em>Begins</em></h1>
+        <p class="hero-subtitle">Haderslevvej 87 · Kolding</p>
+        <div class="hero-stars">
+          <div class="stars-row">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <span class="hero-stars-text">4.9 · 150+  Google Reviews</span>
         </div>
-        <span class="dish-tag">Chef's Choice</span>
+        <div class="hero-actions">
+          <a href="https://foodbooking.com" class="btn-primary">Order Online</a>
+          <a href="#reservation" class="btn-outline">Reserve a Table</a>
+        </div>
       </div>
-      <div class="dish-info">
-        <div class="dish-name">Red Curry</div>
-        <span class="dish-thai">Gaeng Phet</span>
-        <p class="dish-desc">A rich, fragrant red curry simmered in coconut milk with fresh Thai basil, galangal, and your choice of protein. Bold, aromatic, and deeply satisfying — the one dish our guests come back for.</p>
-        <div class="dish-footer">
-          <span class="dish-price">145 kr</span>
-          <div class="dish-spice">
-            <span class="chili hot">🌶</span>
-            <span class="chili hot">🌶</span>
-            <span class="chili">🌶</span>
+      
+      
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-strip" id="about">
+      <div class="about-visual reveal">
+        <div class="img-placeholder">
+          <div class="img-placeholder-icon">
+            <img 
+            src="logo.png" 
+            alt="Nakiin Thai Logo"
+            style="
+            position: relative; 
+            z-index: 2;
+            
+            "
+            display: block
+            />
+          </div>
+          <div class="img-placeholder-label">The Heart of Nakiin</div>
+        </div>
+        <div class="about-badge">
+          <div class="badge-num">4.9</div><br>
+          <div class="badge-label">Rating</div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <span class="section-eyebrow">Our Story</span>
+        <h2 class="section-title">Food Made With<br><span class="accent">Genuine Passion</span></h2>
+        <p class="about-body">
+          At Nakiin Thai, we believe Thai food is more than a meal — it's a journey. Every dish is prepared with recipes passed down through generations, using fresh herbs, aromatic spices, and ingredients sourced for their quality and flavour.
+        </p>
+        <p class="about-body">
+          From our rich, coconut-based curries to the wok-fired intensity of Pad Thai, every plate tells the story of Thailand's vibrant culinary tradition. Whether you dine in, take away, or order delivery — you taste the difference that care makes.
+        </p>
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-num">150+</div>
+            <div class="stat-label">Happy Reviews</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">30+</div>
+            <div class="stat-label">Authentic Dishes</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">5★</div>
+            <div class="stat-label">Avg. Rating</div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- EXPERIENCE STRIP -->
+    <div class="experience">
+      <div class="experience-grid">
+        <div class="exp-item reveal">
+          <span class="exp-icon">
+            <video src="cooking video.mp4" loop autoplay width="100%" height="100%" ><video>
+          </span>
+          <div class="exp-title">Dine In</div>
+          <div class="exp-desc">Enjoy Thailand's warmth in our welcoming, cosy restaurant space</div>
+        </div>
+        
+        <div class="exp-item reveal">
+          <span class="exp-icon">🛵</span>
+          <div class="exp-title">Delivery</div>
+          <div class="exp-desc">Fresh, hot Thai food delivered straight to your door</div>
+        </div>
+        
+        <div class="exp-item reveal">
+          <span class="exp-icon">🥡</span>
+          <div class="exp-title">Takeaway</div>
+          <div class="exp-desc">Quick and convenient — ready when you are, packed with care</div>
+        </div>
+        
+        <div class="exp-item reveal">
+          <span class="exp-icon">🌶</span>
+          <div class="exp-title">Authentic</div>
+          <div class="exp-desc">Traditional Thai recipes crafted with genuine spices and love</div>
+        </div>
+      </div>
     </div>
 
-    <div class="dish-card reveal">
-      <div class="dish-img">
-        <div class="dish-img-inner food-ph ph-pad-thai">
-          <div class="food-ph-icon">🍜</div>
-          <div class="food-ph-name">Phad Thai</div>
-        </div>
-        <span class="dish-tag tag-new">Most Loved</span>
+    <!-- MENU / FEATURED DISHES -->
+    <section class="menu-section" id="menu">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">From Our Kitchen</span>
+        <h2 class="section-title" style="color:var(--jade)">Signature <em style="font-style:italic;color:var(--coral)">Dishes</em></h2>
+        <p class="section-body">Each dish is a celebration of Thai culinary heritage — vibrant, balanced, and made with the finest ingredients</p>
       </div>
-      <div class="dish-info">
-        <div class="dish-name">Pad Thai</div>
-        <span class="dish-thai">Phad Thai</span>
-        <p class="dish-desc">Stir-fried rice noodles with egg, bean sprouts, tamarind, and roasted peanuts. Thailand's most iconic street dish.</p>
-        <div class="dish-footer">
-          <span class="dish-price">135 kr</span>
-          <div class="dish-spice">
-            <span class="chili hot">🌶</span>
-            <span class="chili">🌶</span>
-            <span class="chili">🌶</span>
+      <div class="menu-grid">
+
+        <!-- FEATURED CARD -->
+        <div class="dish-card featured reveal">
+          <div class="dish-img">
+            <div class="dish-img-inner food-ph ph-red-curry">
+              <div class="food-ph-icon">🍛</div>
+              <div class="food-ph-name">Gaeng Phet</div>
+            </div>
+            <span class="dish-tag">Chef's Choice</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-name">Red Curry</div>
+            <span class="dish-thai">Gaeng Phet</span>
+            <p class="dish-desc">A rich, fragrant red curry simmered in coconut milk with fresh Thai basil, galangal, and your choice of protein. Bold, aromatic, and deeply satisfying — the one dish our guests come back for.</p>
+            <div class="dish-footer">
+              <span class="dish-price">145 kr</span>
+              <div class="dish-spice">
+                <span class="chili hot">🌶</span>
+                <span class="chili hot">🌶</span>
+                <span class="chili">🌶</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card reveal">
+          <div class="dish-img">
+            <div class="dish-img-inner food-ph ph-pad-thai">
+              <div class="food-ph-icon">🍜</div>
+              <div class="food-ph-name">Phad Thai</div>
+            </div>
+            <span class="dish-tag tag-new">Most Loved</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-name">Pad Thai</div>
+            <span class="dish-thai">Phad Thai</span>
+            <p class="dish-desc">Stir-fried rice noodles with egg, bean sprouts, tamarind, and roasted peanuts. Thailand's most iconic street dish.</p>
+            <div class="dish-footer">
+              <span class="dish-price">135 kr</span>
+              <div class="dish-spice">
+                <span class="chili hot">🌶</span>
+                <span class="chili">🌶</span>
+                <span class="chili">🌶</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card reveal">
+          <div class="dish-img">
+            <div class="dish-img-inner food-ph ph-green-curry">
+              <div class="food-ph-icon">🥥</div>
+              <div class="food-ph-name">Gaeng Keow Wan</div>
+            </div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-name">Green Curry</div>
+            <span class="dish-thai">Gaeng Keow Wan</span>
+            <p class="dish-desc">Creamy coconut milk curry with fresh green chillies, kaffir lime, and baby aubergine. Vibrant and aromatic.</p>
+            <div class="dish-footer">
+              <span class="dish-price">145 kr</span>
+              <div class="dish-spice">
+                <span class="chili hot">🌶</span>
+                <span class="chili hot">🌶</span>
+                <span class="chili hot">🌶</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card reveal">
+          <div class="dish-img">
+            <div class="dish-img-inner food-ph ph-khao-pad">
+              <div class="food-ph-icon">🍚</div>
+              <div class="food-ph-name">Khao Pad</div>
+            </div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-name">Thai Fried Rice</div>
+            <span class="dish-thai">Khao Pad</span>
+            <p class="dish-desc">Wok-tossed jasmine rice with egg, seasonal vegetables, and your choice of protein. Simple, perfect, satisfying.</p>
+            <div class="dish-footer">
+              <span class="dish-price">125 kr</span>
+              <div class="dish-spice">
+                <span class="chili hot">🌶</span>
+                <span class="chili">🌶</span>
+                <span class="chili">🌶</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card reveal">
+          <div class="dish-img">
+            <div class="dish-img-inner food-ph ph-tom-yum">
+              <div class="food-ph-icon">🥣</div>
+              <div class="food-ph-name">Tom Yum</div>
+            </div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-name">Tom Yum Soup</div>
+            <span class="dish-thai">Tom Yum Goong</span>
+            <p class="dish-desc">A legendary hot-and-sour broth with lemongrass, galangal, and fresh prawns. Warming, complex, and unforgettable.</p>
+            <div class="dish-footer">
+              <span class="dish-price">119 kr</span>
+              <div class="dish-spice">
+                <span class="chili hot">🌶</span>
+                <span class="chili hot">🌶</span>
+                <span class="chili">🌶</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="menu-cta-wrap reveal">
+        <a href="menu.html" class="btn-primary" style="display:inline-flex;">View Full Menu →</a>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section" id="gallery">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">From Our Kitchen & Table</span>
+        <h2 class="section-title" style="color:var(--jade)">Feast Your <em style="font-style:italic;color:var(--coral)">Eyes</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gal-item reveal">
+          <div class="gal-ph ph-g1" style="height:100%;background:linear-gradient(135deg,#3D1A00 0%,#8B4513 50%,#C4632A 100%);display:flex;align-items:center;justify-content:center;font-size:2.5rem;">🍛</div>
+          <div class="gal-overlay"><span class="gal-label">Red Curry perfection</span></div>
+        </div>
+        <div class="gal-item reveal">
+          <div class="gal-ph ph-g2" style="height:100%;background:linear-gradient(135deg,#1A3D1A 0%,#3A7A4A 50%,#5CA870 100%);display:flex;align-items:center;justify-content:center;font-size:2.5rem;">🥬</div>
+          <div class="gal-overlay"><span class="gal-label">Fresh herbs daily</span></div>
+        </div>
+        <div class="gal-item reveal">
+          <div class="gal-ph ph-g3" style="height:100%;background:linear-gradient(135deg,#3D0D00 0%,#8B2500 50%,#B84A20 100%);display:flex;align-items:center;justify-content:center;font-size:2.5rem;">🌶</div>
+          <div class="gal-overlay"><span class="gal-label">Spice and soul</span></div>
+        </div>
+        <div class="gal-item reveal">
+          <div class="gal-ph ph-g4" style="height:100%;background:linear-gradient(135deg,#1C3A2E 0%,#2D6B50 50%,#4A9C78 100%);display:flex;align-items:center;justify-content:center;font-size:2.5rem;">🌿</div>
+          <div class="gal-overlay"><span class="gal-label">Kaffir lime & lemongrass</span></div>
+        </div>
+        <div class="gal-item reveal">
+          <div class="gal-ph ph-g5" style="height:100%;background:linear-gradient(135deg,#4A3000 0%,#9B7025 50%,#C9A84C 100%);display:flex;align-items:center;justify-content:center;font-size:2.5rem;">🍜</div>
+          <div class="gal-overlay"><span class="gal-label">Noodles done right</span></div>
+        </div>
+        <div class="gal-item reveal">
+          <div class="gal-ph ph-g6" style="height:100%;background:linear-gradient(135deg,#2D0D0D 0%,#6B2020 50%,#9B4040 100%);display:flex;align-items:center;justify-content:center;font-size:2.5rem;">🥥</div>
+          <div class="gal-overlay"><span class="gal-label">Coconut milk richness</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews-section" id="reviews">
+      <div class="section-header reveal" style="text-align:left">
+        <span class="section-eyebrow">What Our Guests Say</span>
+        <h2 class="section-title">Loved by <em style="font-style:italic;color:var(--gold)">Kolding</em></h2>
+      </div>
+      <div class="reviews-track" id="reviewsTrack">
+
+        <div class="review-card">
+          <div class="review-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="review-quote-mark">"</span>
+          <p class="review-text">Honestly, I eat a lot of Asian food — but the Thai food here is something else entirely. We stumbled across it on holiday in Kolding and it became the highlight of our trip.</p>
+          <div class="review-author">
+            <div class="reviewer-avatar av-blue">TD</div>
+            <div>
+              <div class="reviewer-name">Tyler Davies</div>
+              <div class="reviewer-meta">Visited · 1 month ago</div>
+            </div>
+            <span class="review-badge">Google</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="review-quote-mark">"</span>
+          <p class="review-text">The food was absolutely delicious, with every dish bursting with authentic Thai flavours. The red curry and Pad Thai were especially impressive. A wonderful experience from start to finish.</p>
+          <div class="review-author">
+            <div class="reviewer-avatar av-green">HG</div>
+            <div>
+              <div class="reviewer-name">Hang Gle</div>
+              <div class="reviewer-meta">Visited · 9 months ago</div>
+            </div>
+            <span class="review-badge">Google</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="review-quote-mark">"</span>
+          <p class="review-text">Nice decoration, great food, and friendly prices. The staff are genuinely lovely and make you feel so welcome. I'll definitely be coming back again very soon.</p>
+          <div class="review-author">
+            <div class="reviewer-avatar av-orange">AV</div>
+            <div>
+              <div class="reviewer-name">Arjen van Dalen</div>
+              <div class="reviewer-meta">Visited · 5 months ago</div>
+            </div>
+            <span class="review-badge">Google</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="review-quote-mark">"</span>
+          <p class="review-text">Good service and lovely staff. I was very impressed by everything — the atmosphere, the quality, and the flavours. I'll definitely find a chance to come back again.</p>
+          <div class="review-author">
+            <div class="reviewer-avatar av-blue">GV</div>
+            <div>
+              <div class="reviewer-name">Guest Visitor</div>
+              <div class="reviewer-meta">Visited · 9 months ago</div>
+            </div>
+            <span class="review-badge">Google</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="review-quote-mark">"</span>
+          <p class="review-text">Best Thai in all of Kolding — no contest. The fried duck is extraordinary, the atmosphere is cosy, and every single dish tastes completely authentic. A true gem.</p>
+          <div class="review-author">
+            <div class="reviewer-avatar av-green">MK</div>
+            <div>
+              <div class="reviewer-name">Mikkel K.</div>
+              <div class="reviewer-meta">Local guide · 3 months ago</div>
+            </div>
+            <span class="review-badge">Google</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="reviews-nav reveal">
+        <button class="rev-btn" onclick="scrollReviews(-1)" aria-label="Previous">←</button>
+        <button class="rev-btn" onclick="scrollReviews(1)" aria-label="Next">→</button>
+        <div class="rev-summary">
+          <div class="rev-big-num">4.9</div>
+          <div class="rev-big-details">
+            <div class="rev-big-stars">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <div class="rev-big-count">Based on 150 reviews</div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="dish-card reveal">
-      <div class="dish-img">
-        <div class="dish-img-inner food-ph ph-green-curry">
-          <div class="food-ph-icon">🥥</div>
-          <div class="food-ph-name">Gaeng Keow Wan</div>
-        </div>
-      </div>
-      <div class="dish-info">
-        <div class="dish-name">Green Curry</div>
-        <span class="dish-thai">Gaeng Keow Wan</span>
-        <p class="dish-desc">Creamy coconut milk curry with fresh green chillies, kaffir lime, and baby aubergine. Vibrant and aromatic.</p>
-        <div class="dish-footer">
-          <span class="dish-price">145 kr</span>
-          <div class="dish-spice">
-            <span class="chili hot">🌶</span>
-            <span class="chili hot">🌶</span>
-            <span class="chili hot">🌶</span>
+    <!-- RESERVATION -->
+    <section class="reservation" id="reservation">
+      <div class="res-info reveal">
+        <span class="section-eyebrow">Book a Table</span>
+        <h2 class="section-title" style="color:var(--jade)">Join Us for <em style="font-style:italic;color:var(--coral)">Dinner</em></h2>
+        <p class="res-body">Reserve your table and let us take you on a journey to Thailand. Whether it's a quiet dinner for two or a celebration with friends, we're ready to make it memorable.</p>
+        <div class="res-details">
+          <div class="res-detail">
+            <div class="res-detail-icon">📍</div>
+            <div>
+              <div class="res-detail-title">Location</div>
+              <div class="res-detail-text">Haderslevvej 87, st<br>6000 Kolding, Denmark</div>
+            </div>
+          </div>
+          <div class="res-detail">
+            <div class="res-detail-icon">🕐</div>
+            <div>
+              <div class="res-detail-title">Opening Hours</div>
+              <div class="res-detail-text">
+                Mon – Fri: 11:00 – 21:00<br>
+                Sat – Sun: 12:00 – 21:00
+              </div>
+            </div>
+          </div>
+          <div class="res-detail">
+            <div class="res-detail-icon">📞</div>
+            <div>
+              <div class="res-detail-title">Phone Reservation</div>
+              <div class="res-detail-text"><a href="tel:91847630">+45 91 84 76 30</a></div>
+            </div>
+          </div>
+          <div class="res-detail">
+            <div class="res-detail-icon">🌐</div>
+            <div>
+              <div class="res-detail-title">Online Booking</div>
+              <div class="res-detail-text"><a href="https://foodbooking.com">foodbooking.com</a></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="dish-card reveal">
-      <div class="dish-img">
-        <div class="dish-img-inner food-ph ph-khao-pad">
-          <div class="food-ph-icon">🍚</div>
-          <div class="food-ph-name">Khao Pad</div>
-        </div>
-      </div>
-      <div class="dish-info">
-        <div class="dish-name">Thai Fried Rice</div>
-        <span class="dish-thai">Khao Pad</span>
-        <p class="dish-desc">Wok-tossed jasmine rice with egg, seasonal vegetables, and your choice of protein. Simple, perfect, satisfying.</p>
-        <div class="dish-footer">
-          <span class="dish-price">125 kr</span>
-          <div class="dish-spice">
-            <span class="chili hot">🌶</span>
-            <span class="chili">🌶</span>
-            <span class="chili">🌶</span>
+      <div class="res-form-wrap reveal" id="formWrap">
+        <div class="res-form-title">Reserve Your Table</div>
+        <div class="res-form-sub">We'll confirm your reservation by phone or email within 2 hours</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">First Name</label>
+            <input class="form-input" type="text" placeholder="Your name" id="fName">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Last Name</label>
+            <input class="form-input" type="text" placeholder="Surname" id="fLast">
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="dish-card reveal">
-      <div class="dish-img">
-        <div class="dish-img-inner food-ph ph-tom-yum">
-          <div class="food-ph-icon">🥣</div>
-          <div class="food-ph-name">Tom Yum</div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input class="form-input" type="email" placeholder="your@email.com" id="fEmail">
         </div>
-      </div>
-      <div class="dish-info">
-        <div class="dish-name">Tom Yum Soup</div>
-        <span class="dish-thai">Tom Yum Goong</span>
-        <p class="dish-desc">A legendary hot-and-sour broth with lemongrass, galangal, and fresh prawns. Warming, complex, and unforgettable.</p>
-        <div class="dish-footer">
-          <span class="dish-price">119 kr</span>
-          <div class="dish-spice">
-            <span class="chili hot">🌶</span>
-            <span class="chili hot">🌶</span>
-            <span class="chili">🌶</span>
+        <div class="form-group">
+          <label class="form-label">Phone Number</label>
+          <input class="form-input" type="tel" placeholder="+45 __ __ __ __" id="fPhone">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Date</label>
+            <input class="form-input" type="date" id="fDate">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Time</label>
+            <div class="form-select-wrap">
+              <select class="form-select" id="fTime">
+                <option value="">Select time</option>
+                <option>11:30</option>
+                <option>12:00</option>
+                <option>12:30</option>
+                <option>13:00</option>
+                <option>17:00</option>
+                <option>17:30</option>
+                <option>18:00</option>
+                <option>18:30</option>
+                <option>19:00</option>
+                <option>19:30</option>
+                <option>20:00</option>
+                <option>20:30</option>
+              </select>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-
-  </div>
-  <div class="menu-cta-wrap reveal">
-    <a href="https://nakiin.dk" class="btn-primary" style="display:inline-flex;">View Full Menu →</a>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section class="gallery-section" id="gallery">
-  <div class="section-header reveal">
-    <span class="section-eyebrow">From Our Kitchen & Table</span>
-    <h2 class="section-title" style="color:var(--jade)">Feast Your <em style="font-style:italic;color:var(--coral)">Eyes</em></h2>
-  </div>
-  <div class="gallery-grid">
-    <div class="gal-item reveal">
-      <div class="gal-ph ph-g1" style="height:100%;background:linear-gradient(135deg,#3D1A00 0%,#8B4513 50%,#C4632A 100%);display:flex;align-items:center;justify-content:center;font-size:2.5rem;">🍛</div>
-      <div class="gal-overlay"><span class="gal-label">Red Curry perfection</span></div>
-    </div>
-    <div class="gal-item reveal">
-      <div class="gal-ph ph-g2" style="height:100%;background:linear-gradient(135deg,#1A3D1A 0%,#3A7A4A 50%,#5CA870 100%);display:flex;align-items:center;justify-content:center;font-size:2.5rem;">🥬</div>
-      <div class="gal-overlay"><span class="gal-label">Fresh herbs daily</span></div>
-    </div>
-    <div class="gal-item reveal">
-      <div class="gal-ph ph-g3" style="height:100%;background:linear-gradient(135deg,#3D0D00 0%,#8B2500 50%,#B84A20 100%);display:flex;align-items:center;justify-content:center;font-size:2.5rem;">🌶</div>
-      <div class="gal-overlay"><span class="gal-label">Spice and soul</span></div>
-    </div>
-    <div class="gal-item reveal">
-      <div class="gal-ph ph-g4" style="height:100%;background:linear-gradient(135deg,#1C3A2E 0%,#2D6B50 50%,#4A9C78 100%);display:flex;align-items:center;justify-content:center;font-size:2.5rem;">🌿</div>
-      <div class="gal-overlay"><span class="gal-label">Kaffir lime & lemongrass</span></div>
-    </div>
-    <div class="gal-item reveal">
-      <div class="gal-ph ph-g5" style="height:100%;background:linear-gradient(135deg,#4A3000 0%,#9B7025 50%,#C9A84C 100%);display:flex;align-items:center;justify-content:center;font-size:2.5rem;">🍜</div>
-      <div class="gal-overlay"><span class="gal-label">Noodles done right</span></div>
-    </div>
-    <div class="gal-item reveal">
-      <div class="gal-ph ph-g6" style="height:100%;background:linear-gradient(135deg,#2D0D0D 0%,#6B2020 50%,#9B4040 100%);display:flex;align-items:center;justify-content:center;font-size:2.5rem;">🥥</div>
-      <div class="gal-overlay"><span class="gal-label">Coconut milk richness</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- REVIEWS -->
-<section class="reviews-section" id="reviews">
-  <div class="section-header reveal" style="text-align:left">
-    <span class="section-eyebrow">What Our Guests Say</span>
-    <h2 class="section-title">Loved by <em style="font-style:italic;color:var(--gold)">Kolding</em></h2>
-  </div>
-  <div class="reviews-track" id="reviewsTrack">
-
-    <div class="review-card">
-      <div class="review-stars">
-        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-      </div>
-      <span class="review-quote-mark">"</span>
-      <p class="review-text">Honestly, I eat a lot of Asian food — but the Thai food here is something else entirely. We stumbled across it on holiday in Kolding and it became the highlight of our trip.</p>
-      <div class="review-author">
-        <div class="reviewer-avatar av-blue">TD</div>
-        <div>
-          <div class="reviewer-name">Tyler Davies</div>
-          <div class="reviewer-meta">Visited · 1 month ago</div>
-        </div>
-        <span class="review-badge">Google</span>
-      </div>
-    </div>
-
-    <div class="review-card">
-      <div class="review-stars">
-        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-      </div>
-      <span class="review-quote-mark">"</span>
-      <p class="review-text">The food was absolutely delicious, with every dish bursting with authentic Thai flavours. The red curry and Pad Thai were especially impressive. A wonderful experience from start to finish.</p>
-      <div class="review-author">
-        <div class="reviewer-avatar av-green">HG</div>
-        <div>
-          <div class="reviewer-name">Hang Gle</div>
-          <div class="reviewer-meta">Visited · 9 months ago</div>
-        </div>
-        <span class="review-badge">Google</span>
-      </div>
-    </div>
-
-    <div class="review-card">
-      <div class="review-stars">
-        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-      </div>
-      <span class="review-quote-mark">"</span>
-      <p class="review-text">Nice decoration, great food, and friendly prices. The staff are genuinely lovely and make you feel so welcome. I'll definitely be coming back again very soon.</p>
-      <div class="review-author">
-        <div class="reviewer-avatar av-orange">AV</div>
-        <div>
-          <div class="reviewer-name">Arjen van Dalen</div>
-          <div class="reviewer-meta">Visited · 5 months ago</div>
-        </div>
-        <span class="review-badge">Google</span>
-      </div>
-    </div>
-
-    <div class="review-card">
-      <div class="review-stars">
-        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-      </div>
-      <span class="review-quote-mark">"</span>
-      <p class="review-text">Good service and lovely staff. I was very impressed by everything — the atmosphere, the quality, and the flavours. I'll definitely find a chance to come back again.</p>
-      <div class="review-author">
-        <div class="reviewer-avatar av-blue">GV</div>
-        <div>
-          <div class="reviewer-name">Guest Visitor</div>
-          <div class="reviewer-meta">Visited · 9 months ago</div>
-        </div>
-        <span class="review-badge">Google</span>
-      </div>
-    </div>
-
-    <div class="review-card">
-      <div class="review-stars">
-        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-      </div>
-      <span class="review-quote-mark">"</span>
-      <p class="review-text">Best Thai in all of Kolding — no contest. The fried duck is extraordinary, the atmosphere is cosy, and every single dish tastes completely authentic. A true gem.</p>
-      <div class="review-author">
-        <div class="reviewer-avatar av-green">MK</div>
-        <div>
-          <div class="reviewer-name">Mikkel K.</div>
-          <div class="reviewer-meta">Local guide · 3 months ago</div>
-        </div>
-        <span class="review-badge">Google</span>
-      </div>
-    </div>
-
-  </div>
-  <div class="reviews-nav reveal">
-    <button class="rev-btn" onclick="scrollReviews(-1)" aria-label="Previous">←</button>
-    <button class="rev-btn" onclick="scrollReviews(1)" aria-label="Next">→</button>
-    <div class="rev-summary">
-      <div class="rev-big-num">4.9</div>
-      <div class="rev-big-details">
-        <div class="rev-big-stars">
-          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-        </div>
-        <div class="rev-big-count">Based on 150 reviews</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- RESERVATION -->
-<section class="reservation" id="reservation">
-  <div class="res-info reveal">
-    <span class="section-eyebrow">Book a Table</span>
-    <h2 class="section-title" style="color:var(--jade)">Join Us for <em style="font-style:italic;color:var(--coral)">Dinner</em></h2>
-    <p class="res-body">Reserve your table and let us take you on a journey to Thailand. Whether it's a quiet dinner for two or a celebration with friends, we're ready to make it memorable.</p>
-    <div class="res-details">
-      <div class="res-detail">
-        <div class="res-detail-icon">📍</div>
-        <div>
-          <div class="res-detail-title">Location</div>
-          <div class="res-detail-text">Haderslevvej 87, st<br>6000 Kolding, Denmark</div>
-        </div>
-      </div>
-      <div class="res-detail">
-        <div class="res-detail-icon">🕐</div>
-        <div>
-          <div class="res-detail-title">Opening Hours</div>
-          <div class="res-detail-text">
-            Mon – Fri: 11:00 – 21:00<br>
-            Sat – Sun: 12:00 – 21:00
+        <div class="form-group">
+          <label class="form-label">Guests</label>
+          <div class="form-select-wrap">
+            <select class="form-select" id="fGuests">
+              <option>1 person</option>
+              <option selected>2 people</option>
+              <option>3 people</option>
+              <option>4 people</option>
+              <option>5 people</option>
+              <option>6 people</option>
+              <option>7+ people (contact us)</option>
+            </select>
           </div>
         </div>
-      </div>
-      <div class="res-detail">
-        <div class="res-detail-icon">📞</div>
-        <div>
-          <div class="res-detail-title">Phone Reservation</div>
-          <div class="res-detail-text"><a href="tel:91847630">+45 91 84 76 30</a></div>
+        <div class="form-group">
+          <label class="form-label">Special Requests <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--warm-grey)">(optional)</span></label>
+          <textarea class="form-textarea" placeholder="Allergies, dietary requirements, occasion..." id="fNotes"></textarea>
+        </div>
+        <p class="form-note">By submitting, you agree to us contacting you to confirm your reservation. No deposit required.</p>
+        <button class="form-submit" onclick="submitForm()">Reserve My Table</button>
+        <div class="form-success" id="formSuccess">
+          <div class="form-success-icon">✅</div>
+          <h3>Reservation Received!</h3>
+          <p>Thank you! We'll confirm your table within 2 hours by phone or email. See you soon at Nakiin Thai.</p>
         </div>
       </div>
-      <div class="res-detail">
-        <div class="res-detail-icon">🌐</div>
-        <div>
-          <div class="res-detail-title">Online Booking</div>
-          <div class="res-detail-text"><a href="https://foodbooking.com">foodbooking.com</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="res-form-wrap reveal" id="formWrap">
-    <div class="res-form-title">Reserve Your Table</div>
-    <div class="res-form-sub">We'll confirm your reservation by phone or email within 2 hours</div>
-    <div class="form-row">
-      <div class="form-group">
-        <label class="form-label">First Name</label>
-        <input class="form-input" type="text" placeholder="Your name" id="fName">
-      </div>
-      <div class="form-group">
-        <label class="form-label">Last Name</label>
-        <input class="form-input" type="text" placeholder="Surname" id="fLast">
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="form-label">Email Address</label>
-      <input class="form-input" type="email" placeholder="your@email.com" id="fEmail">
-    </div>
-    <div class="form-group">
-      <label class="form-label">Phone Number</label>
-      <input class="form-input" type="tel" placeholder="+45 __ __ __ __" id="fPhone">
-    </div>
-    <div class="form-row">
-      <div class="form-group">
-        <label class="form-label">Date</label>
-        <input class="form-input" type="date" id="fDate">
-      </div>
-      <div class="form-group">
-        <label class="form-label">Time</label>
-        <div class="form-select-wrap">
-          <select class="form-select" id="fTime">
-            <option value="">Select time</option>
-            <option>11:30</option>
-            <option>12:00</option>
-            <option>12:30</option>
-            <option>13:00</option>
-            <option>17:00</option>
-            <option>17:30</option>
-            <option>18:00</option>
-            <option>18:30</option>
-            <option>19:00</option>
-            <option>19:30</option>
-            <option>20:00</option>
-            <option>20:30</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="form-label">Guests</label>
-      <div class="form-select-wrap">
-        <select class="form-select" id="fGuests">
-          <option>1 person</option>
-          <option selected>2 people</option>
-          <option>3 people</option>
-          <option>4 people</option>
-          <option>5 people</option>
-          <option>6 people</option>
-          <option>7+ people (contact us)</option>
-        </select>
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="form-label">Special Requests <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--warm-grey)">(optional)</span></label>
-      <textarea class="form-textarea" placeholder="Allergies, dietary requirements, occasion..." id="fNotes"></textarea>
-    </div>
-    <p class="form-note">By submitting, you agree to us contacting you to confirm your reservation. No deposit required.</p>
-    <button class="form-submit" onclick="submitForm()">Reserve My Table</button>
-    <div class="form-success" id="formSuccess">
-      <div class="form-success-icon">✅</div>
-      <h3>Reservation Received!</h3>
-      <p>Thank you! We'll confirm your table within 2 hours by phone or email. See you soon at Nakiin Thai.</p>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- LOCATION STRIP -->
-<div class="location-strip" id="location">
-  <div class="loc-left">
-    <div class="loc-address">Haderslevvej 87, Kolding</div>
-    <div class="loc-sub">Free parking available · Wheelchair accessible · Steps from the city</div>
-    <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
-      <a href="https://maps.google.com/?q=Haderslevvej+87,+6000+Kolding" class="loc-btn loc-btn-gold" target="_blank">📍 Get Directions</a>
-      <a href="tel:91847630" class="loc-btn loc-btn-outline">📞 Call Us</a>
+    <!-- LOCATION STRIP -->
+    <div class="location-strip" id="location">
+      <div class="loc-left">
+        <div class="loc-address">Haderslevvej 87, Kolding</div>
+        <div class="loc-sub">Free parking available · Wheelchair accessible · Steps from the city</div>
+        <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="https://maps.google.com/?q=Haderslevvej+87,+6000+Kolding" class="loc-btn loc-btn-gold" target="_blank">📍 Get Directions</a>
+          <a href="tel:91847630" class="loc-btn loc-btn-outline">📞 Call Us</a>
+        </div>
+      </div>
+      <div class="loc-hours">
+        <div class="loc-hours-title">Opening Hours</div>
+        <div class="loc-hour-row">
+          <span>Monday</span>
+          <span>11:00 – 21:00</span>
+        </div>
+        <div class="loc-hour-row">
+          <span>Tuesday</span>
+          <span>11:00 – 21:00</span>
+        </div>
+        <div class="loc-hour-row">
+          <span>Wednesday</span>
+          <span>11:00 – 21:00</span>
+        </div>
+        <div class="loc-hour-row">
+          <span>Thursday</span>
+          <span>11:00 – 21:00</span>
+        </div>
+        <div class="loc-hour-row">
+          <span>Friday</span>
+          <span>11:00 – 21:00</span>
+        </div>
+        <div class="loc-hour-row">
+          <span>Saturday</span>
+          <span>12:00 – 21:00</span>
+        </div>
+        <div class="loc-hour-row">
+          <span>Sunday</span>
+          <span>12:00 – 21:00</span>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="loc-hours">
-    <div class="loc-hours-title">Opening Hours</div>
-    <div class="loc-hour-row">
-      <span>Monday</span>
-      <span>11:00 – 21:00</span>
-    </div>
-    <div class="loc-hour-row">
-      <span>Tuesday</span>
-      <span>11:00 – 21:00</span>
-    </div>
-    <div class="loc-hour-row">
-      <span>Wednesday</span>
-      <span>11:00 – 21:00</span>
-    </div>
-    <div class="loc-hour-row">
-      <span>Thursday</span>
-      <span>11:00 – 21:00</span>
-    </div>
-    <div class="loc-hour-row">
-      <span>Friday</span>
-      <span>11:00 – 21:00</span>
-    </div>
-    <div class="loc-hour-row">
-      <span>Saturday</span>
-      <span>12:00 – 21:00</span>
-    </div>
-    <div class="loc-hour-row">
-      <span>Sunday</span>
-      <span>12:00 – 21:00</span>
-    </div>
-  </div>
-</div>
-
+  </main>
+</body>
 <!-- FOOTER -->
 <footer class="footer">
   <div class="footer-top">
